@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <textarea rows="4"><?= htmlspecialchars($result) ?></textarea>
 <?php endif; ?>
 
-<a href="index.php">Back</a>
+<a href="welcomepage.php">Back</a>
 </div>
 
 </body>

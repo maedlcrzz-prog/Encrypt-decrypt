@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $result = encrypt_text($text, $map);
 
     $stmt = $pdo->prepare("
-        INSERT INTO encryption_logs (encrypted_text)
+        INSERT INTO dynamic_keys (encrypted_text)
         VALUES (:encrypted)
     ");
     $stmt->execute([

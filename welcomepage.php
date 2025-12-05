@@ -12,6 +12,7 @@
     <p>Secure your messages with simple tools below.</p>
     <a href="encrypt.php">Encrypt Text</a>
     <a href="decrypt.php">Decrypt Text</a>
+    <a href="update.php">Update Keys</a>
     <footer>Created by Garcia, Crisostomo, Broncano and Villanueva | 2025</footer>
   </div>
 </body>
