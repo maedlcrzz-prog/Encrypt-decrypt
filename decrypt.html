@@ -10,7 +10,7 @@
   <div class="container">
     <h1>🔓 Decrypt Text</h1>
     <textarea id="inputText" placeholder="Enter encrypted text..."></textarea>
-    <input id="key" type="number" placeholder="Enter key (e.g., 3)" />
+   
     <button onclick="decrypt()">Decrypt</button>
     <h3>Result:</h3>
     <div id="output"></div>
@@ -19,34 +19,7 @@
       <a href="encrypt.html">🔐 Go to Encryption</a>
     </div>
   </div>
- <script>
-    function caesarCipher(text, shift) {
-      const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-      let result = '';
-      shift = shift % 26;
-
-      for (let i = 0; i < text.length; i++) {
-        const char = text[i];
-        const isLower = char === char.toLowerCase();
-        const baseChar = char.toUpperCase();
-
-        if (alphabet.includes(baseChar)) {
-          const newIndex = (alphabet.indexOf(baseChar) + shift + 26) % 26;
-          const newChar = alphabet[newIndex];
-          result += isLower ? newChar.toLowerCase() : newChar;
-        } else {
-          result += char;
-        }
-      }
-      return result;
-    }
-
-    function decrypt() {
-      const text = document.getElementById("inputText").value;
-      const key = parseInt(document.getElementById("key").value) || 0;
-      document.getElementById("output").textContent = caesarCipher(text, -key);
-    }
-  </script>
+ 
  
 </body>
 </html>
