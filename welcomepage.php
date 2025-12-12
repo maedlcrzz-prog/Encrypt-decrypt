@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="container">
-    <h1>🔐 Welcome to the Encryption & Decryption App</h1>
+    <h1>Welcome to the Encryption & Decryption App</h1>
     <p>Secure your messages with simple tools below.</p>
     <a href="encrypt.php">Encrypt Text</a>
     <a href="decrypt.php">Decrypt Text</a>
